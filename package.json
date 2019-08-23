@@ -1,0 +1,9 @@
+{
+    "name": "ynab-export-csv-extension",
+    "version": "0.0.5",
+    "eslintConfig": {
+        "env": {
+            "browser": true
+        }
+    }
+}

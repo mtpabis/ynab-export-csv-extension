@@ -6,7 +6,7 @@ Extract transactions from your bank's website to a YNAB-importable file.
 ## How to use
 
 * Select the transactions > Righ Click > Export to YNAB CSV
-![](icons/demo.gif)
+![](resources/demo.gif)
 
 
 ## How to install

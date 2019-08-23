@@ -3,7 +3,6 @@
   "name": "YNAB export CSV",
   "description": "Export transactions table from your bank to YNAB ready format",
   "version": "0.5",
-  "default_locale": "en",
   "content_scripts": [
     {
       "matches": [
@@ -22,6 +21,6 @@
     "page": "/options/options.html"
   },
   "icons": {
-    "32": "icons/YNAB-32.png"
+    "32": "resources/YNAB-32.png"
   }
 }

@@ -3,10 +3,7 @@ import { isEmpty, allOptions } from '/defaults.js'
 var selectedText = ''
 
 browser.storage.local.get().then((options) => {
-  console.log('is there anythin in storage?')
   if (isEmpty(options)) {
-    console.log('no!')
-    console.log('setting localStorage to ' + allOptions[0])
     browser.storage.local.set(allOptions[0])
   }
 })

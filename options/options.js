@@ -1,12 +1,9 @@
 /* global browser */
 import { allOptions, isEmpty } from '../defaults.js'
 
-var countLoads = 0
-console.log('loading options for the ' + countLoads++ + 'time')
 updateList()
 
 function updateList () {
-  console.log(allOptions)
   makeOptionsMenu(allOptions)
 }
 
@@ -24,11 +21,11 @@ function makeOptionsMenu (options) {
   })
 }
 
-function saveButtonHandler (e) {
+function bankFormatChangedHandler (e) {
   e.preventDefault()
   var valueOfSelected = parseInt(document.getElementById('banks').value)
   var selectedBank = allOptions.filter((bank) => bank.id === valueOfSelected)[0]
   browser.storage.local.set(selectedBank)
   console.log('stored selection:' + selectedBank)
 }
-document.getElementById('selected-regexp').addEventListener('submit', saveButtonHandler)
+document.getElementById('banks').addEventListener('change', bankFormatChangedHandler)

@@ -11,7 +11,7 @@ Extract transactions from your bank's website to a YNAB-importable file.
 
 ## How to install
 
-Grab the extension here [TODO: Insert link].
+[Grab the extension here](https://addons.mozilla.org/en-US/firefox/addon/ynab-export-csv/).
 
 ## Supported Banks
 * Banco BEST - Portugal

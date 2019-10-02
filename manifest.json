@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "YNAB export CSV",
   "description": "Export transactions table from your bank to YNAB ready format",
-  "version": "0.5",
+  "version": "0.5.1",
   "content_scripts": [
     {
       "matches": [

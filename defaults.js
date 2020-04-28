@@ -15,7 +15,7 @@ export var allOptions = [
   {
     id: 3,
     name: 'mBank',
-    regexp: /.*(\d\d\.\d\d\.\d\d\d\d)\s*(.*)\s*(-?[0-9.,]+)\sPLN\s*/gm,
+    regexp: /.*(\d\d\.\d\d\.\d\d\d\d)\s*(.*)\s*(-?[0-9., ]+)\sPLN\s*/gm,
     hasSeparateFieldForSign: false,
     format: ['D', 'P', 'I'],
     newLineSeparator: "\t\t\n",

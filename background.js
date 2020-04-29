@@ -31,7 +31,11 @@ function handleClicked (info) {
 }
 
 function downloadYnabFile (selectedText, options) {
-  var textAsCsv = WriteAsCsv(Parse(selectedText, options.regexp), options.format, options.hasSeparateFieldForSign)
+  var textAsCsv = WriteAsCsv(
+    Parse(selectedText, options.regexp, options.newLineSeparator),
+    options.format,
+    options.hasSeparateFieldForSign
+  )
   var blob = new Blob([textAsCsv],
     {
       type: 'text/plain'
@@ -45,8 +49,8 @@ function downloadYnabFile (selectedText, options) {
   browser.downloads.download(downloadOptions)
 }
 
-function Parse (copiedText, regex) {
-  return copiedText.split('\n').map(line => {
+function Parse (copiedText, regex, newLineSeparator) {
+  return copiedText.split(newLineSeparator || '\n').map(line => {
     var r = regex.exec(line)
     regex.lastIndex = 0
     return r

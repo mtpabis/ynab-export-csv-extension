@@ -16,6 +16,7 @@ Extract transactions from your bank's website to a YNAB-importable file.
 ## Supported Banks
 * Banco BEST - Portugal
 * Nordea - Denmark
+* Mbank - Poland
 
 ## Contributing
 
